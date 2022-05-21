@@ -1,0 +1,59 @@
+*
+{
+	/* For more information about box sizing, see:
+	https://www.w3schools.com/CSSref/css3_pr_box-sizing.asp 	 */
+	box-sizing: border-box;
+}
+
+html,
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;font-size:1em;}html{overflow-x:hidden}
+
+ul
+{
+	list-style: none;
+	margin: 1em auto;
+	padding: 0;
+	width: 10em;
+}
+
+@media (min-width: 20em)
+{
+	ul { width: 20em }
+}
+
+@media (min-width: 30em)
+{
+	ul { width: 30em }
+}
+
+@media (min-width: 40em)
+{
+	ul { width: 40em }
+}
+
+@media (min-width: 60em)
+{
+	ul { width: 60em }
+}
+
+li
+{
+	float: left;
+	width: 12em;
+	height: 8em;
+	margin: 1em;
+	padding: 1.5em;
+	background: white;
+	color: black;
+	border-left: 10px black double; border-top: 10px black double;
+	border-right: 15px black solid; border-bottom: 15px black solid;
+	-moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

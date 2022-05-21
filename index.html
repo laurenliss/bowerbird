@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+  <body onload="flipit()">
+    <center><h1>All My Students I Know On LinkedIn (v 1.0 as of May 21, 2022)</h1></center>
+    <ul id="myList"></ul>
+
+		<script src="data/052022-array.js"></script>
+
+		<script>
+
+		function flipit(){
+			connections.reverse();
+			helloworld();
+		}
+
+		function helloworld(){
+			let humans = connections;
+			let list = document.getElementById("myList");
+			humans.forEach((data)=>{
+				let li = document.createElement("li");
+				li.innerText = data['JobTitle'];
+				list.appendChild(li);
+			})
+			humans.length = 0;
+		}
+		</script>
+
+  </body>
+</html>
